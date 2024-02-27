@@ -5,7 +5,13 @@ body {
     padding: 0%;
     margin: 5%;
 }
-
+input{
+    font-family: 'Patrick Hand', cursive;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 2vw;
+    font-weight: bold;
+}
 .container {
     display: flex;
     background-color: aliceblue;
@@ -18,7 +24,7 @@ body {
     justify-content: center;
 }
 .content_wrap{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 .time_zone{
@@ -59,11 +65,23 @@ body {
     text-align: right;
 }
 .change_timezone{
-
+    display: none;
+    position:absolute;
+    background-color: azure;
+    border-radius: 5px;
+    border-color: black;
+    border: 3px solid black;
+    padding: 2vw;
+}
+.change_timezone p{
+    font-size: 2vw;
+    margin-block-start: 0em;
+    font-weight: bold;
 }
 .custom-select {
     position: relative;
     display: inline-block;
+    font-size: 2vw;
 }
 
 .select-header {
@@ -87,6 +105,8 @@ body {
     border: 1px solid #ccc;
     border-top: none;
     border-radius: 0 0 4px 4px;
+    height: 30vh;
+    overflow-y: scroll;
 }
 
 .option {
@@ -96,4 +116,8 @@ body {
 
 .custom-select.open .options {
     display: block;
+}
+/* Tambahkan warna abu-abu untuk elemen dengan class time_zone saat formulir muncul */
+#contentWrap.visible #timezoneForm {
+    background-color: gray; /* Warna abu-abu */
 }

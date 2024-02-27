@@ -11,20 +11,20 @@
 <script src="https://kit.fontawesome.com/d3f87c5093.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="content_wrap">
+    <div class="container" id="containerColor">
+        <div class="content_wrap" id="contentWrap">
             <div class="time_zone">
                 <p>indonesia/jakarta</p>
-                <button class="change"><i class="fas fa-edit"></i></button>
+                <button class="change" onclick="toggleForm()"><i class="fas fa-edit"></i></button>
             </div>
             <div class="time">
-                <p>08:27:30</p>
+                <p></p>
             </div>
             <div class="date">
                 <p>monday, 27 feburary, 2024</p>
             </div>
         </div>
-        <div class="change_timezone">
+        <div class="change_timezone" id="timezoneForm">
             <p>Change timezone</p>
             <div class="custom-select">
                 <div class="select-header">
@@ -39,7 +39,7 @@
                     <div class="option" data-value="korea">Korea</div>
                 </div>
             </div>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Apply">
         </div>
         
     </div>
