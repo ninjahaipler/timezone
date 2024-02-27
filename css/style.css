@@ -1,12 +1,99 @@
-body{
+body {
+    font-family: 'Patrick Hand', cursive;
     background-color: azure;
     margin: 0px;
+    padding: 0%;
+    margin: 5%;
 }
-.container{
-    margin: 5% 5% 5% 5%;
+
+.container {
+    display: flex;
     background-color: aliceblue;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Lebar container, bisa disesuaikan */
+    height: 100%; /* 100% dari tinggi viewport */
+    box-sizing: border-box;
     border-radius: 20px;
     border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+.content_wrap{
+    display: none;
+    flex-direction: column;
+}
+.time_zone{
+    display: flex;
+    margin-left: auto;
+}
+.time_zone p{
+    color: darkgrey;
+    width: 20vw;
+    font-size: 2vw;
+    text-align: right;
+}
+.change{
+    background-color: transparent;
+    padding-block: 0px;
+    padding-inline: 0px;
+    border-width: 0px;
+    margin-left: 10px;
+}
+.change i{
+    font-size: 2vw;
+}
+.time{
+    margin-left: auto;
+}
+.time p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 8vw;
+    font-weight: bold;
+}
+.date{
+    margin-left: auto;
+}
+.date p {
+    width: 20vw;
+    font-size: 2vw;
+    text-align: right;
+}
+.change_timezone{
+
+}
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+
+.select-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px; /* Sesuaikan lebar dropdown sesuai kebutuhan */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+}
+
+.option {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.custom-select.open .options {
+    display: block;
 }
