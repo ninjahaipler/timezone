@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>watch</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/d3f87c5093.js" crossorigin="anonymous"></script>
+<script src="js/bundle.js"></script>
 </head>
 <body>
     <div class="container" id="containerColor">
@@ -18,7 +19,7 @@
                 <button class="change" onclick="toggleForm()"><i class="fas fa-edit"></i></button>
             </div>
             <div class="time">
-                <p></p>
+                <p id='currentTime'></p>
             </div>
             <div class="date">
                 <p>monday, 27 feburary, 2024</p>

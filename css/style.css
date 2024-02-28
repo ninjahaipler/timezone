@@ -26,6 +26,7 @@ input{
 .content_wrap{
     display: flex;
     flex-direction: column;
+    width: 25vw;
 }
 .time_zone{
     display: flex;

@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const customSelect = document.querySelector('.custom-select');
     const selectHeader = customSelect.querySelector('.select-header');
@@ -22,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+import dayjs from 'dayjs';
+
 function toggleForm() {
     console.log("button click");
     var contentWrap = document.getElementById('contentWrap');
@@ -40,12 +44,10 @@ function toggleForm() {
         timezoneForm.style.display = 'none';
     }
 }
-const dayjs = require('dayjs')
 
 function updateCurrentTime() {
     const currentTimeElement = document.getElementById('currentTime');
     const currentTime = dayjs().format('HH:mm:ss'); // Format waktu sesuai kebutuhan
-    console.log("waktu")
     currentTimeElement.innerHTML = `<p>${currentTime}</p>`;
 }
 
@@ -54,4 +56,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update waktu setiap detik
     setInterval(updateCurrentTime, 1000);
 });
-
