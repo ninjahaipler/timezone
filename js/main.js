@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const selectHeader = customSelect.querySelector('.select-header');
     const optionsContainer = customSelect.querySelector('.options');
     const selectedOption = customSelect.querySelector('.selected-option');
+    const change = document.querySelector('.change');
 
     selectHeader.addEventListener('click', function () {
         customSelect.classList.toggle('open');
@@ -22,28 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
             customSelect.classList.remove('open');
         }
     });
+    change.addEventListener('click', function () {
+        MicroModal.init();
+    });
 });
 
 import dayjs from 'dayjs';
-
-function toggleForm() {
-    console.log("button click");
-    var contentWrap = document.getElementById('contentWrap');
-    var timezoneForm = document.getElementById('timezoneForm');
-    let container = document.getElementById('containerColor');
-    // Toggle kelas 'visible' pada elemen contentWrap
-    contentWrap.classList.toggle('visible');
-
-    if (contentWrap.classList.contains('visible')) {
-        console.log("if");
-        timezoneForm.style.display = 'block';
-        container.style.backgroundColor = 'darkGray';
-        container.style.backdropFilter = 'blur(100%)';
-    } else {
-        console.log("else");
-        timezoneForm.style.display = 'none';
-    }
-}
+import MicroModal from 'micromodal';
 
 function updateCurrentTime() {
     const currentTimeElement = document.getElementById('currentTime');
