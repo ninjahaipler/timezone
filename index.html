@@ -15,6 +15,8 @@
     <script type="module">
       import micromodal from 'https://cdn.skypack.dev/micromodal';
     </script>    
+     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7"></script>
+     <script src="https://cdn.jsdelivr.net/npm/micromodal@0.4.6/dist/micromodal.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -36,40 +38,26 @@
             </div>
         </div>
         <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
-              <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-                <header class="modal__header">
-                  <h2 class="modal__title" id="modal-1-title">
-                    Micromodal
-                  </h2>
-                  <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
-                </header>
-                <main class="modal__content" id="modal-1-content">
-                    <button class="modal__btn modal__btn-primary">Apply</button>
-                </main>
+          <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+              <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                  Change timezone
+                </h2>
+              </header>
+              <main class="modal__content" id="modal-1-content">
+                <div class="select-header">
+                  <div class="selected-option">Pick a timezone</div>
+                  <div class="arrow">&#9660;</div>
               </div>
+              <div class="options">
+                  <div class="option" data-value="america">America</div>
+              </div>
+              <button class="modal__btn modal__btn-primary">Apply</button>
+              </main>
             </div>
           </div>
-          
-        
-        <div class="change_timezone" id="timezoneForm">
-            <p>Change timezone</p>
-            <div class="custom-select">
-                <div class="select-header">
-                    <div class="selected-option">Pick a timezone</div>
-                    <div class="arrow">&#9660;</div>
-                </div>
-                <div class="options">
-                    <div class="option" data-value="america">America</div>
-                    <div class="option" data-value="australia">Australia</div>
-                    <div class="option" data-value="japan">Japan</div>
-                    <div class="option" data-value="arab">Arab</div>
-                    <div class="option" data-value="korea">Korea</div>
-                </div>
-            </div>
-            <input type="submit" value="Apply">
         </div>
-        
     </div>
 </body>
 </html>

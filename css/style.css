@@ -89,7 +89,7 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px; /* Sesuaikan lebar dropdown sesuai kebutuhan */
+    width: 20vw;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -125,10 +125,6 @@ input{
 /**************************\
   Basic Modal Styles
 \**************************/
-
-.modal {
-    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
-  }
   
   .modal__overlay {
     position: fixed;
@@ -156,15 +152,16 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
   }
   
   .modal__title {
+    font-family: 'Patrick Hand', cursive;
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 600;
-    font-size: 1.25rem;
-    line-height: 1.25;
-    color: #00449e;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.5;
     box-sizing: border-box;
   }
   
@@ -176,7 +173,7 @@ input{
   .modal__header .modal__close:before { content: "\2715"; }
   
   .modal__content {
-    margin-top: 2rem;
+    display: flex;
     line-height: 1.5;
     color: rgba(0,0,0,.8);
   }
@@ -215,8 +212,11 @@ input{
   }
   
   .modal__btn-primary {
-    background-color: #00449e;
-    color: #fff;
+    font-family: 'Patrick Hand', cursive;
+    background-color: transparent;
+    color:black;
+    font-weight: 800;
+    font-size: 1.2rem;
   }
   
   
