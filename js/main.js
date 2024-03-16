@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 import dayjs from 'dayjs';
+import 'dayjs/plugin/timezone'; // Import plugin timezone
 import MicroModal from 'micromodal';
 
 function updateCurrentTime() {
